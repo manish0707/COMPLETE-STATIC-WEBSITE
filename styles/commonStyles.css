@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merienda+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    outline: none;
+}
+
+
+body {
+    background: #1d1d1d;
+}
+
+
+/* navbar styles starts here */
+.navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 50px;
+    transition: all 0.3s ease;
+    z-index: 210;
+}
+
+.hide {
+    display: none;
+}
+
+.black-background {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 20px;
+}
+
+.logo {
+    flex: 1;
+    font-size: 30px;
+}
+
+.logo h1 a {
+    text-transform: capitalize;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.navlinks {
+    flex: 2;
+}
+
+.navlinks ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.navlinks ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding: 5px;
+}
+
+.navlinks ul li a:hover {
+    border-bottom: 2px solid #18e591;
+}
+
+.burger {
+    cursor: pointer;
+    display: none;
+}
+
+.burger i {
+    font-size: 35px;
+}
+
+
+.start-a-project-btn {
+    flex: 1;
+    text-align: right;
+}
+
+button {
+    padding: 18px 25px;
+    background: none;
+    text-transform: uppercase;
+    border: 2px solid #706c6ca4;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.start-a-project-btn button:hover {
+    background-color: #18e591;
+    border-color: #18e591;
+}
+/* navbar styles ends here */
+
+
+/* footer styles */
+
+
+
+footer {
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 150px 150px;
+    font-size: 1rem;
+}
+
+.footer-top p {
+    font-size: 1.2rem;
+}
+
+.social-icons {
+    color: #ffffff;
+    width: 32%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.social-icons i {
+    font-size: 22px;
+}
+
+.footer-top div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-top div:nth-child(2) p {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.footer-top div:nth-child(2) p span {
+    color: #18e591;
+    font-size: inherit;
+    font-style: italic;
+}
+
+.footer-top div:nth-child(2) button {
+    padding: 15px 25px;
+}
+
+.footer-top div:nth-child(2) button:hover {
+    border-color: #18e591;
+    background: #18e591;
+}
+
+.footer-top div:nth-child(3) {
+    text-align: right;
+} 
+
+.footer-top div:nth-child(3) p {
+    line-height: 170%;
+}
+
+.footer-bottom {
+    border-top: 1px solid hsla(0,0%,100%,.1);
+    padding: 50px 10px;
+    width: 80%;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #666;
+    font-weight: bold;
+}
+
+/* footer styles ending */
+
+
+/* .start-a-project-form styles*/
+
+
+.start-a-project-form {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    flex-direction: row-reverse;
+    z-index: 2000000;
+}
+
+.close {
+    position: absolute;
+    top: 50px;
+    left: 1250px;
+    font-size: 30px;
+    color: #000;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.start-a-project-form-content {
+    padding: 100px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin:auto;
+    overflow: auto;
+    color: #000;
+}
+.start-a-project-form-content span {
+    color: inherit;
+    font-family: Libre Baskerville,serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: inherit;
+}
+.start-a-project-form-content h1 {
+    color: #000;
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+.form-top {
+    margin-top: 50px;
+}
+.form-top li {
+    list-style: none;
+    margin: 20px 0;
+}
+.form-top label {
+    color: #000;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+.form-top input , textarea {
+    color: #000;
+    width: 100%;
+    padding: 15px 15px;
+    border: none;
+    background: #f5f5f5;
+}
+.form-top select {
+    width: 100%;
+    padding: 15px 15px;
+    background: #f5f5f5;    
+    border: none;
+    color: #000;
+}
+.form-top select option {
+    color: #000;
+}
+
+.form-top button {
+    color: #000;
+    width: 100%;
+    letter-spacing: 1px;
+}
+.form-top button:hover {
+    background: #18e591;
+}
+
+.showNavbar {
+    display: block;
+}
+
+
+@media screen and (max-width: 599px) {
+    .navlinks {
+        position: fixed;
+        right: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: #000;
+        display: none;
+        cursor: pointer;
+    }
+    .navlinks ul {
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+    }
+    .navlinks ul li {
+        text-align: center;
+    }
+    .navlinks ul li a {
+        font-size: 20px;
+    }
+    .navlinks ul li a:hover {
+        color: green;
+    }
+    .start-a-project-btn button {
+        display: block;
+        margin: 0 5px;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .navbar {
+        margin: 0;
+        padding: 10px;
+    }
+    .burger {
+        display: block;
+        z-index: 2000;
+    }
+    .logo h1 a{
+        font-size: 25px;
+    }
+    .footer-top {
+        flex-direction: column;
+    }
+    button {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    .footer-top {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 0;
+        font-size: 1rem;
+    }
+    .footer-top > div {
+        margin: 20px 0;
+    }
+    .footer-top div:nth-child(2) p {
+        font-size: 30px;
+        margin: 20px 0;
+    }
+    .footer-top div:nth-child(1) {
+        text-align: center;
+    }
+    .social-icons {
+        color: #ffffff;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 10px;
+    }
+    .social-icons i {
+        font-size: 22px;
+    }
+    .footer-top div:nth-child(3) {
+        text-align: center;
+    } 
+    .start-a-project-form-content {
+        padding: 50px;
+    }
+    .start-a-project-form-content h1 {
+        color: #000;
+        font-size: 38px;
+        font-weight: lighter;
+    }
+    .start-a-project-form-content .close {
+        position: absolute;
+        top: 35px;
+        left: 300px;
+    }
+}

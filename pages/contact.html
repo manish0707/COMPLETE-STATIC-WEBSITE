@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow: auto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/19f4d49ae7.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/commonStyles.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <title>DEMO PROJECT</title>
+</head>
+<body>
+    <div class="main-div">
+        <nav class="navbar">
+                        <div class="logo">
+                            <h1><a href="../index.html">LOGO HERE</a></h1>
+                        </div>
+                        <div class="navlinks">
+                            <ul>
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="../pages/gallery.html">Gallery</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="start-a-project-btn">
+                            <button>Start a project</button>
+                        </div>
+                        <div class="burger">
+                                <i class="fas fa-bars"></i>
+                        </div>
+                    </nav>
+
+                    <section class="front-section">
+                        <p data-aos="fade-up" data-aos-delay="1000" data-aos-easing="ease" >Contact</p>
+                        <h1 data-aos="fade-up" data-aos-delay="1000" data-aos-easing="ease" class="about-heading">Let's get <span>Connected.</span></h1>
+                    </section>
+            
+                    <!-- main content of webpage goes here -->
+
+                    <section class="after-card-section">
+                        <div class="after-card-section-one">
+                            <h1>Just Contact us anytime!</h1>
+                        </div>
+                        <div class="after-card-section-middle">
+                            <div>
+                                    <span>Tel</span>
+                                    <h1>+91 8585858585</h1>
+                            </div>
+                           <div>
+                                <span>Email</span>
+                                <h1>Info@something.com</h1>
+                           </div>
+                            <div>
+                                <span>Follow</span>
+                                <div class="social">
+                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="after-card-section-two">
+                            <span>Address</span>
+                            <p>10/10, Sarita Vihar, New Delhi 110063</p>
+                            <button>
+                                Get Directions
+                            </button>
+                        </div>
+                </section>
+
+                <div class="map">
+                        <div class="mapouter">
+                            <div class="gmap_canvas">
+                                <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=new%20delhi&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            </div>
+                        </div>
+                </div>
+
+                    <!-- main content of webpage ends here -->
+            
+                    <!-- footer goes here -->
+            
+                    <footer>
+                        <div class="footer-top">
+                                <div style="flex: 1">
+                                        <p>info@something.com</p>
+                                        <p>+44 (0)191 228 9444</p>
+                                        <div class="social-icons">
+                                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                        </div>
+                                    </div>
+                        
+                                    <div style="flex: 2;">
+                                        <p>Got a project <span>in mind?</span></p>
+                                        <button class="start-a-project-btn" >START A PROJECT</button>
+                                    </div>
+                        
+                                    <div style="flex: 1">
+                                        <p>Unit 17, Quay Level <br/>
+                                                St Peters Wharf <br/>
+                                                Newcastle upon Tyne <br />
+                                                NE6 1TZ</p>
+                                    </div>
+                        </div>
+                        <div class="footer-bottom">
+                            <p>© UNION ROOM 2019. ALL RIGHTS RESERVED   /   PRIVACY POLICY /   CAREERS /   SITEMAP</p>
+                        </div>  
+                    </footer>
+    </div>
+</body>
+
+
+<!-- start a project window -->
+<div class="start-a-project-form">
+        <div class="start-a-project-form-content">
+                <div>
+                        <i class="fas fa-times close"></i>
+                </div>
+                <h1>Start a <span>Project</span></h1>
+                <form>
+                        <div class="form-top">
+                                <ul>
+                                    <li>
+                                        <label for="name">Name*</label>
+                                        <div>
+                                            <input type="text" placeholder="Enter your full name">
+                                        </div>
+                                    </li>
+                                    <li>
+                                            <label for="name">Email*</label>
+                                            <div>
+                                                <input type="text" placeholder="Enter your Email">
+                                            </div>
+                                    </li>
+                                    <li>
+                                            <label for="name">Telephone*</label>
+                                            <div>
+                                                <input type="text" placeholder="Enter your telephone">
+                                            </div>
+                                    </li>
+                                    <li>
+                                            <label for="name">Gender*</label>
+                                            <div>
+                                                <select name="gender" id="gender">
+                                                    <option value="male">Male</option>
+                                                    <option value="male">Female</option>
+                                                    <option value="male">Other</option>
+                                                </select>
+                                            </div>
+                                    </li>
+                                    <li>
+                                            <label for="name">Tell us about your requirments*</label>
+                                            <div>
+                                                <textarea name="" id="" cols="150" rows="10" placeholder="Please write here"></textarea>
+                                            </div>
+                                    </li>
+                                    <li>
+                                            <button>Submit your details</button>
+                                    </li>
+                                </ul>
+                            </div>
+                </form>
+            </div>
+
+</div>
+<!-- start a project window code ends here -->
+
+<script src="../scripts/NavScroll.js"></script>
+<script src="../scripts/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../scripts/imageViewer.js"></script>
+<script>
+    AOS.init({delay : 200, offset : 220});
+</script>
+</html>

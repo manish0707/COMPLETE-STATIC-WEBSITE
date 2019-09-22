@@ -1,0 +1,280 @@
+.front-section {
+    height: 120vh;
+    background: url('../images/office.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
+    clip-path: polygon(0 0, 100% 0, 100% 83%, 0% 100%);
+}
+/* front content styles starts here */
+.front-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 200px;
+    height: 100vh;
+    justify-content: space-evenly;
+    margin-left: 100px;
+}
+
+.front-content p {
+    color: #18e591;
+    font-weight: bold;
+}
+
+.front-content h1 {
+    font-size: 45px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    line-height: 170%;
+}
+
+.front-content .cursor {
+    font-size: 48px;
+    text-transform: inherit;
+    margin-left: 5px;
+    animation: flash 2.5s infinite;
+}
+
+.front-content .animation-line {
+    font-size: 48px;
+    text-transform: inherit;
+    font-style: italic;
+    /* font-family: 'Merienda One', cursive; */
+    font-family: Libre Baskerville,serif;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+/* .front-content span::after {
+    content: "";
+    border-left: 2px solid white;
+} */
+
+.front-content button:hover {
+    border-color: #ffffff;
+}
+
+.front-content i {
+    font-size: 40px;
+    color: #ffffff;
+}
+/* front content styles ends here */
+
+
+/* styles of main content start here */
+
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+
+.main-content-inner-div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.main-content-heading {
+    width:65%;
+}
+
+.main-content-heading p {
+    font-size: 50px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+.main-content-heading span {
+    font-size: inherit;
+    color: #18e591;
+    text-align: center;
+    display: block;
+    text-align: center;
+    font-style: italic;
+}
+
+
+/* main content card links style starts here */
+
+
+.main-content-card-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 100px 0;
+}
+
+.main-content-card-links a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.main-content-card-links .anchor-inner {
+    height: 350px;
+    width: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease;
+}
+
+.anchor-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anchor-inner span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: none;
+}
+.anchor-inner:hover {
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
+}
+.main-content-card-links a:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.main-content-card-links a:hover .anchor-inner span {
+    display: block;
+}
+
+.after-card-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 50px;
+}
+
+.after-card-section-one {
+    width: 100%;
+}
+
+.after-card-section-one h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    line-height: 120%;
+}
+
+.after-card-section-two {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-around;
+    margin-left: 100px;
+}
+
+.after-card-section-two p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 200%;
+}
+
+.after-card-section-two button {
+    padding: 15px 25px;
+    font-size: 0.8rem;
+    transform: all 1s ease;
+}
+
+.after-card-section-two button:hover {
+    border-color: #ffffff;
+}
+
+.important-links {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 120px;
+    padding: 0 35px;
+}
+
+.important-links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.important-links ul li {
+    margin: 5px 0;
+}
+
+.important-links ul li a {
+    text-decoration: none;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 599px) {
+    .front-section {
+        background: url('../images/office.jpg');
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-attachment: unset;
+        box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
+        clip-path: none;
+        padding: 0;
+    }
+    .front-content {
+        height: 90vh;
+        padding-top: 100px;
+        margin-left: 20px;
+    }
+    .front-content h1 {
+        font-size: 28px;
+    }
+    .front-content .animation-line {
+        font-size: 30px;
+    }
+    .front-section .cursor {
+        font-size: 25px;
+    }
+    .front-content p {
+        font-size: 14px;
+        width: 80%;
+    }
+    .front-content i {
+        font-size: 25px;
+    }
+    .after-card-section,
+    .important-links {
+        flex-direction: column;
+    }
+    .main-content-inner-div {
+        padding: 50px 0;
+    }
+    .main-content-card-links {
+        margin-bottom: 50px;
+    }
+    .main-content-heading {
+        width: 90%;
+    }
+    .main-content-heading p {
+        font-size: 30px;
+    }
+    .after-card-section {
+        padding: 0;
+    }
+    .after-card-section-one h1 {
+        font-size: 30px;
+    }
+    .after-card-section-two {
+        margin: 0;
+        padding-top: 20px;
+    }
+    .important-links {
+        padding: 0;
+        margin-top: 50px;
+    }
+    .important-links div {
+        margin: 10px 0;
+    }
+}
